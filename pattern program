@@ -1,0 +1,136 @@
+#include <stdio.h>  
+ int main()  
+{  
+    int n;  
+    printf("Enter the number of rows");  
+    scanf("%d",&n);  
+    for(int i=0;i<n;i++)  
+    {  
+        for(int j=0;j<n;j++)  
+        {  
+            printf("*");  
+        }  
+        printf("\n");  
+    }  
+      
+    return 0;  
+}  
+Output
+
+Star Program in C
+Hollow Square Star Pattern
+Now, we create the hollow square star pattern. The source code for this pattern is given below:
+
+int main()  
+{  
+    int n;  
+    printf("Enter the number of rows");  
+    scanf("%d",&n);  
+    for(int i=1;i<=n;i++)  
+    {  
+        for(int j=1;j<=n;j++)  
+        {  
+            if(i==1 ||i==n||j==1||j==n)  
+            {  
+            printf("*");  
+            }  
+            else  
+            printf(" ");  
+        }  
+        printf("\n");  
+    }  
+      
+    return 0;  
+}  
+Output
+
+Star Program in C
+Hollow Square Pattern with Diagonal
+The code for the hollow square star pattern is given below:
+
+#include <stdio.h>  
+int main()  
+{  
+    int n;  
+    printf("Enter the number of rows");  
+    scanf("%d",&n);  
+    for(int i=1;i<=n;i++)  
+    {  
+        for(int j=1;j<=n;j++)  
+        {  
+            if(i==1 ||i==n||j==1||j==n-i+1||i==j||j==n)  
+            {  
+            printf("*");  
+            }  
+            else  
+            {  
+                  
+                      printf(" ");  
+                  }  
+                 
+            }        
+        printf("\n");  
+    }  
+      
+    return 0;  
+}  
+Output
+
+Star Program in C
+Rhombus Star Pattern
+The code for the rhombus star pattern is given below:
+
+#include <stdio.h>  
+  
+int main()  
+{  
+    int n;  
+    printf("Enter the number of rows");  
+    scanf("%d",&n);  
+    for(int i=n;i>=1;i--)  
+    {  
+        for(int j=1;j<=i-1;j++)  
+        {  
+            printf(" ");  
+        }  
+        for(int k=1;k<=n;k++)  
+        {  
+            printf("*");  
+        }  
+        printf("\n");  
+    }  
+    return 0;  
+}  
+Output
+
+Star Program in C
+Hollow Rhombus Star Pattern
+The code for the hollow rhombus star pattern is given below:
+
+#include <stdio.h>  
+  
+int main()  
+{  
+    int n;  
+    printf("Enter the number of rows");  
+    scanf("%d",&n);  
+    for(int i=n;i>=1;i--)  
+    {  
+        for(int j=1;j<=i-1;j++)  
+        {  
+            printf(" ");  
+        }  
+        for(int k=1;k<=n;k++)  
+        {  
+           if(i==1 || i==n || k==1 || k==n)  
+            printf("*");  
+            else  
+            printf(" ");   
+        }  
+        printf("\n");  
+    }  
+    return 0;  
+}  
+Output
+
+Star Program in C
